@@ -5,10 +5,25 @@
              x:Class="App4.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <Entry Placeholder="身長を入力してください" 
+           x:Name="S1" 
+           VerticalOptions="Center"/>
+      <Entry Placeholder="体重を入力してください" 
+             x:Name="T1"
+              VerticalOptions="Center"/>
+        <Button Text="計算開始"
+                x:Name="B1"
+                 VerticalOptions="Center"/>
+        <Label Text="結果"
+             x:Name="K1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="Large"/>
+        
+        <Button Text="別ページ"
+                x:Name="A1
+                "
+                Clicked="A1ClickedEvent"/>
     </StackLayout>
 
 </ContentPage>
